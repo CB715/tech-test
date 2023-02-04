@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/app.css';
 
 import Search from '../components/Search'
+import SearchResults from './SearchResults';
 
 const App = () => {
   const [searchResults, setSearchResults] = useState();
@@ -13,6 +14,7 @@ const App = () => {
         src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg" 
         alt='NASA Logo'/>
       <Search setSearchResults={setSearchResults} />
+      <SearchResults />
     </div>
   );
 }
