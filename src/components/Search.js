@@ -2,28 +2,29 @@ import React, { useState } from 'react';
 import '../styles/search.css';
 import getImages from '../requests/getImages';
 
-const Search = () => {
+const Search = ({ setSearchResults }) => {
     const [value, setValue] = useState();
+    
     const handleSubmit = (event) => {
         event.preventDefault();
-        getImages(value);
-    }
+        setSearchResults(getImages(value));
+    };
 
     return (
     <div>
-    <form className='search-form' onSubmit={handleSubmit}>
-    
+      <form className='search-form' onSubmit={handleSubmit}>
+        
         <input 
-            className='search-form__input-box' 
-            type='text' 
-            placeholder='Search' 
-            onChange={(e) => setValue(e.target.value)}
+          className='search-form__input-box' 
+          type='text' 
+          placeholder='Search' 
+          onChange={(e) => setValue(e.target.value)}
         />
     
         <button className='search-form__button' type='submit'>
-            Search
+          Search
         </button>
-    </form>
+      </form>
     </div> 
     );
 };
