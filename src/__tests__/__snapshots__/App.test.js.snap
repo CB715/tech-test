@@ -27,6 +27,13 @@ exports[`App renders App component 1`] = `
         </button>
       </form>
     </div>
+    <div
+      class="search-results"
+    >
+      <p>
+        Search Results
+      </p>
+    </div>
   </div>
 </DocumentFragment>
 `;
