@@ -1,11 +1,17 @@
-import react, { useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/search.css';
+import getImages from '../requests/getImages';
 
 const Search = () => {
     const [value, setValue] = useState();
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        getImages(value);
+    }
+
     return (
-    <>
-    <form className='search-form'>
+    <div>
+    <form className='search-form' onSubmit={handleSubmit}>
     
         <input 
             className='search-form__input-box' 
@@ -18,7 +24,7 @@ const Search = () => {
             Search
         </button>
     </form>
-    </> 
+    </div> 
     );
 };
 

@@ -10,21 +10,23 @@ exports[`App renders App component 1`] = `
       class="nasa-logo"
       src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
     />
-    <form
-      class="search-form"
-    >
-      <input
-        class="search-form__input-box"
-        placeholder="Search"
-        type="text"
-      />
-      <button
-        class="search-form__button"
-        type="submit"
+    <div>
+      <form
+        class="search-form"
       >
-        Search
-      </button>
-    </form>
+        <input
+          class="search-form__input-box"
+          placeholder="Search"
+          type="text"
+        />
+        <button
+          class="search-form__button"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
   </div>
 </DocumentFragment>
 `;
