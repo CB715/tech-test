@@ -27,7 +27,9 @@ exports[`App renders App component 1`] = `
         </button>
       </form>
     </div>
-    <p>
+    <p
+      class="search-results__no-results"
+    >
       No results
     </p>
   </div>
