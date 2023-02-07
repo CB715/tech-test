@@ -1,17 +1,17 @@
 .search-results__images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .search-results__text {
-    margin-bottom: 20px;
-    text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .search-results__no-results {
-    margin-bottom: 20px;
-    text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .card-image {
@@ -23,7 +23,19 @@
 }
 
 .card-image:hover {
-    transform: scale(1.1);
-    transition: all 0.3 ease-in-out;
+  transform: scale(1.1);
+  transition: all 0.3 ease-in-out;
 }
 
+@media (max-width: 480px) {
+  .card-image {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+  }
+  .search-results__images {
+    height: 70vh;
+    overflow-y: scroll;
+    justify-content: center;
+  }
+}
