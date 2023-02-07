@@ -32,7 +32,11 @@ const Search = ({ setSearchResults }) => {
 };
 
 Search.propTypes = {
-  setSearchResults: PropTypes.func.isRequired,
+  setSearchResults: PropTypes.func,
 };
+
+Search.defaultProps = {
+  setSearchResults: () => [],
+}
 
 export default Search;
