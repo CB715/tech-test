@@ -8,6 +8,7 @@ exports[`App renders App component 1`] = `
     <img
       alt="NASA Logo"
       class="nasa-logo"
+      data-testid="nasaLogo"
       src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
     />
     <div>

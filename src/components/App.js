@@ -13,7 +13,8 @@ const App = () => {
       <img 
         className='nasa-logo' 
         src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg" 
-        alt='NASA Logo'/>
+        alt='NASA Logo'
+        data-testid='nasaLogo'/>
       <Search setSearchResults={setSearchResults} />
       <SearchResults results={searchResults}/>
     </div>
