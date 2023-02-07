@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types'
 
 import '../styles/search.css';
 import getImages from '../requests/getImages';
@@ -22,12 +23,16 @@ const Search = ({ setSearchResults }) => {
           onChange={(e) => setValue(e.target.value)}
         />
     
-        <button className='search-form__button' type='submit'>
+        <button className='search-form__button' type='submit' data-testid='button'>
           Search
         </button>
       </form>
     </div> 
     );
+};
+
+Search.propTypes = {
+  setSearchResults: PropTypes.func.isRequired,
 };
 
 export default Search;
