@@ -2,10 +2,35 @@
 
 exports[`Search Results renders correctly 1`] = `
 <DocumentFragment>
-  <p
-    class="search-results__no-results"
+  <div
+    class="search-results"
   >
-    No results
-  </p>
+    <div
+      class="search-results__text"
+    >
+      <p>
+        Search Results:
+      </p>
+    </div>
+    <div
+      class="search-results__images"
+    >
+      <img
+        alt="spaceImage"
+        class="card-image"
+        src="string1"
+      />
+      <img
+        alt="spaceImage"
+        class="card-image"
+        src="string2"
+      />
+      <img
+        alt="spaceImage"
+        class="card-image"
+        src="string3"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
