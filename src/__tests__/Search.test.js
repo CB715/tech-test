@@ -20,4 +20,11 @@ const validProps = {
 
     expect(validProps.setSearchResults).toHaveBeenCalled();
   });
+
+  it('displays button', () => {
+    render(<Search setSearchResults={validProps.setSearchResults} /> );
+    const button = screen.getAllByRole('button');
+
+    expect(button).toHaveLength(1);
+  });
 });
