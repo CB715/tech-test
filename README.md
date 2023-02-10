@@ -7,7 +7,9 @@ This is a project to create an image search application using React.
 
 ## Images
 
-* Coming soon
+![Desktop View](https://user-images.githubusercontent.com/112981370/218110734-53b55e8b-8dc9-4d49-8114-7c3654b9f403.png)
+
+![Mobile View](https://user-images.githubusercontent.com/112981370/218110997-3966ed93-6afc-41a6-9368-6da9bbc1b3ed.png)
 
 ## Commands
 
