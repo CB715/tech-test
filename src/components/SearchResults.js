@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types'
 
 import '../styles/searchResults.css'
 
@@ -19,6 +20,12 @@ const SearchResults = ({ results }) => {
       </div>
     )
   };
+};
+
+SearchResults.propTypes = {
+  results: PropTypes.arrayOf(
+    PropTypes.string.isRequired,
+  )
 };
 
 export default SearchResults
