@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import '../styles/searchResults.css'
 
 const SearchResults = ({ results }) => {
-  if (!results?.length) {
+  if (!results.length) {
     return <p className='search-results__no-results'>No results</p>
   } else {
     return (
