@@ -43,5 +43,6 @@ Data was taken from an external API with HTTP requests using [Axios](https://www
 * Add better styling CSS to make the application more visually appealing
 * Add a gallery to allow full sized images to be viewed
 * Improve media queries for different devices
+* Add an event handler to remote 'No Results' message prior to search being started
 
 
